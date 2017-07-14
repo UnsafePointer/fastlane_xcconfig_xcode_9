@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79D542861F191258003450DE /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		79FC8EBC1F1911C700F6C92F /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FC8EBF1F1911C700F6C92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79FC8EC11F1911C700F6C92F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				79FC8EC61F1911C700F6C92F /* Assets.xcassets */,
 				79FC8EC81F1911C700F6C92F /* LaunchScreen.storyboard */,
 				79FC8ECB1F1911C700F6C92F /* Info.plist */,
+				79D542861F191258003450DE /* Config.xcconfig */,
 			);
 			path = Piggy;
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 				TargetAttributes = {
 					79FC8EBB1F1911C700F6C92F = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 					79FC8ECF1F1911C700F6C92F = {
 						CreatedOnToolsVersion = 9.0;
@@ -349,11 +352,13 @@
 		};
 		79FC8EDA1F1911C700F6C92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D542861F191258003450DE /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Piggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guinea.Piggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,11 +367,13 @@
 		};
 		79FC8EDB1F1911C700F6C92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D542861F191258003450DE /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Piggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guinea.Piggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,6 +429,7 @@
 				79FC8EDB1F1911C700F6C92F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79FC8EDC1F1911C700F6C92F /* Build configuration list for PBXNativeTarget "PiggyTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +438,7 @@
 				79FC8EDE1F1911C700F6C92F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
